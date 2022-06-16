@@ -2,18 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import {Menu, SearchSharp, Mic, VideoCallOutlined, WidgetsOutlined, NotificationsNoneOutlined,YouTube} from '@mui/icons-material';
 import youtubeLogo from './assets/images/youtube_logo.png'
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       <section className="left-header">
-          
+      <Navbar/>
       <img
             src={youtubeLogo}
             className="youtube-logo"
             alt="YouTube Logo"
           />
+          
           <h3>YouTube</h3>
           
         </section>
@@ -40,6 +42,7 @@ function App() {
           />
         </section>
       </header>
+       
     </div>
   );
 }

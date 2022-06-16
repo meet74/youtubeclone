@@ -1,0 +1,27 @@
+.navbar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  margin: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-menu {
+  left: -100%;
+  position: absolute;
+}
+
+.nav-menu-active {
+  transition: 350ms;
+  left: 0%;
+  width: 0px;
+}
+
+.nav-text{
+  display: flex;
+  flex-direction: row;
+}
