@@ -2,8 +2,20 @@
   margin: 0px;
 }
 html, body {
-  overflow-y:hidden;
+
   height:100%;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .App {
@@ -14,18 +26,22 @@ html, body {
   min-height:100vh; 
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .App-header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- 
-  
+
 }
 
 h3{
   height: 10px;
+}
+
+h1{
+  margin: 25px;
 }
 .left-header{
   padding: 20px;
@@ -132,9 +148,23 @@ img{
 .main-body{
 
   background-color: #000;
- 
+
+  justify-content: center;
   flex: 1;
   display: flex;
 }
 
+.length-text{
+  position: relative;
+  left: 80%;
+  bottom: 15%;
+  background-color: #000;
+  width: 50px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.length-text p {
+  font-size: 0.86rem;
+}
 
