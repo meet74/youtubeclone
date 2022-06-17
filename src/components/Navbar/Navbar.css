@@ -1,27 +1,26 @@
-.navbar-body {
-  display: flex;
-  flex-direction: column;
-}
 
-.navbar {
-  margin: 10px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
 
 .nav-menu {
-  left: -100%;
-  position: absolute;
+ 
+  position: relative;
+  transition: 350ms;
+ height: 100vh;
 }
 
 .nav-menu-active {
+  position: relative;
   transition: 350ms;
-  left: 0%;
-  width: 0px;
+  height: 100vh;
+
+
+
 }
 
-.nav-text{
+.nav-text {
   display: flex;
   flex-direction: row;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+
 }
