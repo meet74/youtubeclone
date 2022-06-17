@@ -4,13 +4,13 @@
  
   position: relative;
   transition: 350ms;
- height: 100vh;
+ height: 100%;
 }
 
 .nav-menu-active {
   position: relative;
   transition: 350ms;
-  height: 100vh;
+  height: 100%;
 
 
 

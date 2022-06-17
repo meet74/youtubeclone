@@ -12,17 +12,12 @@ function App() {
     setsideBarState(!sideBarState)}
   return (
     <div className="App">
-
-      <div style={{ display: "flex", position: 'relative', width: '100%' }}>
-
-        <Menu onClick={()=>{
-          showSideBar()
-        }} style={{ color: "white", width: "25px", height: "25px", cursor: "pointer",margin:"30px" }} />
-
-        <div style={{ flexGrow: 2, flexShrink: 1 }}>
           <header className="App-header">
+          
             <section className="left-header">
-
+            <Menu onClick={()=>{
+          showSideBar()
+        }} className='hamburger-menu' />
               <img
                 src={youtubeLogo}
                 className="youtube-logo"
@@ -55,10 +50,8 @@ function App() {
               />
             </section>
           </header>
-         
-        </div>
-      </div>
-      <div style={{display:"flex"}}>
+
+      <div style={{display:"flex", backgroundColor:"#222222",flex:1}}>
         <div>
         <Navbar sideBarState={sideBarState}/>
         </div>
